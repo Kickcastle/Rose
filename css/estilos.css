@@ -222,7 +222,7 @@ header .textos-header{
     padding-bottom: 35px;
     color: #fff;
 }
-.icons > img{
+.icons a img{
     width: 30px;
     height: 30px;
     margin: 15px;
