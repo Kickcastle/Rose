@@ -42,9 +42,7 @@ nav > a{
     color: white;
     margin-right: 15px;
 }
-nav > a:hover{
-    text-decoration: underline;
-}
+
 header .textos-header{
     display: flex;
     height: 430px;
@@ -71,10 +69,12 @@ header .textos-header{
 
 .contenedor-sobre-nosotros {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .img-about-us{
-    width: 48%;
+    width: 50%;
+    width: 500px;
 }
 .contenedor-sobre-nosotros .contenido-textos{
     width: 48%;
@@ -164,9 +164,10 @@ header .textos-header{
     width: 600px;
     height: 30%;
     padding: 10px;
-    background: #f140f19f;
+    border-radius: 10px;
     text-align: justify;
     margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 .cards .card img{
     width: 100px;
@@ -182,18 +183,52 @@ header .textos-header{
 
 /* footer */
 
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-General{
+    display: flex;
+    flex-wrap: wrap;
+    background:  rgba(255, 0, 153, 0.39);
+}
 .contenedor-footer{
     display: flex;
     flex-direction: column;
     height: 400px;
-    width: 100%;
+    width: 49%;
     justify-content: center;
     padding-left: 20px;
+    padding-right: 20px;
     justify-content: space-evenly;
-    background:  hsla(324, 100%, 50%, 0.39);
+    
 }
 .baner p{
-    background:  hsla(324, 100%, 50%, 0.39);
+    background:  rgba(255, 0, 153, 0.39);
     text-align: center;
+    font-size: 12px;
 }
-
+.container-General .redes-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 49%;    
+}
+.icons >p{
+    font-family: impact;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 35px;
+    color: #fff;
+}
+.icons > img{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+}
